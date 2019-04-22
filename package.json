@@ -1,0 +1,45 @@
+{
+  "name": "AwesomeProject123123",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-community/netinfo": "^2.0.0",
+    "accordion-collapse-react-native": "^0.1.9",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "react": "16.8.3",
+    "react-native": "0.59.1",
+    "react-native-accordion": "^1.0.1",
+    "react-native-android-location-enabler": "^1.0.8",
+    "react-native-background-timer": "^2.1.1",
+    "react-native-beacons-manager": "^1.0.7",
+    "react-native-ble-plx": "^1.0.3",
+    "react-native-camera": "^2.0.0",
+    "react-native-elements": "^1.1.0",
+    "react-native-geolocation-service": "^2.0.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-loading-spinner-overlay": "^1.0.1",
+    "react-native-qrcode-scanner": "^1.1.2",
+    "react-native-sqlite-storage": "^3.3.10",
+    "react-native-touchable-scale": "^2.0.0",
+    "react-native-vector-icons": "^6.4.1",
+    "react-navigation": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.3.4",
+    "@babel/runtime": "7.3.4",
+    "babel-jest": "24.5.0",
+    "jest": "24.5.0",
+    "metro-react-native-babel-preset": "0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
