@@ -53,7 +53,7 @@ class permissionForBluetoothLowEnergy extends React.Component {
 
 		await Alert.alert(
       'Alert!',
-      'This page require your bluetooth, press OK to stay\nCancel to go Home page!',
+      'This page require your bluetooth, press Agree to continue\nDecline to go Home page!',
       [
         {
           text: 'Decline, BACK',
