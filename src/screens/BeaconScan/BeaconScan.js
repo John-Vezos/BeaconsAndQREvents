@@ -90,7 +90,7 @@ class BeaconScan extends React.Component {
   		<Collapse>
 	      <CollapseHeader>
 	        <ListItem
-	        	containerStyle={{ borderBottomColor: 'black', borderWidth: 0.5, borderRadius: 3 }}
+	        	containerStyle={{ borderColor: 'black', borderWidth: 0.5, borderRadius: 3 }}
 			      roundAvatar
 			      title={data.item.protocol}
 	        />
@@ -124,7 +124,7 @@ class BeaconScan extends React.Component {
  		
     return (
     	<View style={ styles.container } >
-    		<View style={{flex: 1, flexDirection:'row', marginTop:'10%'}} >
+    		<View style={{flex: 1, flexDirection:'row', marginTop:'3%'}} >
     			<FlatList
 				    data={this.state.allBeacons}
 				    ItemSeparatorComponent={this.FlatListItemSeparator}
@@ -280,7 +280,7 @@ const styles = StyleSheet.create({
 		justifyContent:'center',
 		alignItems:'center',
 		backgroundColor: 'whitesmoke',
-		marginBottom:'8%'
+		marginBottom:'5%'
 	},
 });
 
