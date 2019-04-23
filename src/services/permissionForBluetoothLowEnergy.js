@@ -52,7 +52,7 @@ class permissionForBluetoothLowEnergy extends React.Component {
 	async setAlertForBeaconScan() {
 
 		await Alert.alert(
-      'Alert!',
+      'Permission!',
       'This page require your bluetooth, press Agree to continue\nDecline to go Home page!',
       [
         {
