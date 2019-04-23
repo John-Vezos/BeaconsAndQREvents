@@ -6,9 +6,14 @@ import { createStackNavigator, createAppContainer, createSwitchNavigator } from 
 import localDatabase from './../localDatabase/LocalDatabaseManager';
 import BackgroundTimer from 'react-native-background-timer';
 
+import AwesomeButton from "react-native-really-awesome-button";
+import LinearGradient from "react-native-linear-gradient";
+
 import NetInfo from "@react-native-community/netinfo";
 
 import sync from './../tasks/syncDatabases';
+
+
 
 class Home extends React.Component {
 
@@ -65,17 +70,42 @@ class Home extends React.Component {
           textContent={'Synchronazing...'}
         />
 
-        <Button title="Scan QR code"
-          onPress={ () => this.props.navigation.navigate('QRScan', { title: this.props.navigation.state.params.title }) }
-        />
+        <AwesomeButton
+          type="primary"
+          size="medium"
+          onPress={next => {
+            /** Do Something **/
+            this.props.navigation.navigate('QRScan', { title: this.props.navigation.state.params.title })
+            next();
+          }}
+        >
+          <Text> Scan QR code </Text>
+        </AwesomeButton>
 
-        <Button title="Scan Beacon"
-          onPress={ ()=> this.props.navigation.navigate('BeaconScan', { title: this.props.navigation.state.params.title }) }
-        />
+        <AwesomeButton
+          type="primary"
+          size="medium"
+          onPress={next => {
+            /** Do Something **/
+            this.props.navigation.navigate('BeaconScan', { title: this.props.navigation.state.params.title })
+            next();
+          }}
+        >
+          <Text>  Scan Beacon  </Text>
+        </AwesomeButton>
 
-        <Button title="History"
-          onPress={ ()=> this.props.navigation.navigate('History', { title: this.props.navigation.state.params.title }) }
-        />
+        <AwesomeButton
+          type="secondary"
+          size="medium"
+          onPress={next => {
+            /** Do Something **/
+            this.props.navigation.navigate('History', { title: this.props.navigation.state.params.title })
+            next();
+          }}
+        >
+          <Text>       History       </Text>
+        </AwesomeButton>
+
       </View>
     );
   }
