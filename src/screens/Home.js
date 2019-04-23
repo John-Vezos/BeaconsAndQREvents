@@ -72,7 +72,7 @@ class Home extends React.Component {
 
         <AwesomeButton
           type="primary"
-          size="medium"
+          size="large"
           onPress={next => {
             /** Do Something **/
             this.props.navigation.navigate('QRScan', { title: this.props.navigation.state.params.title })
@@ -84,7 +84,7 @@ class Home extends React.Component {
 
         <AwesomeButton
           type="primary"
-          size="medium"
+          size="large"
           onPress={next => {
             /** Do Something **/
             this.props.navigation.navigate('BeaconScan', { title: this.props.navigation.state.params.title })
@@ -96,7 +96,7 @@ class Home extends React.Component {
 
         <AwesomeButton
           type="secondary"
-          size="medium"
+          size="large"
           onPress={next => {
             /** Do Something **/
             this.props.navigation.navigate('History', { title: this.props.navigation.state.params.title })

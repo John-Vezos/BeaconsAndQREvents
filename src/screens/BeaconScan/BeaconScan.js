@@ -124,7 +124,7 @@ class BeaconScan extends React.Component {
  		
     return (
     	<View style={ styles.container } >
-    		<View style={{flexDirection:'row', marginTop:'10%'}} >
+    		<View style={{flex: 1, flexDirection:'row', marginTop:'10%'}} >
     			<FlatList
 				    data={this.state.allBeacons}
 				    ItemSeparatorComponent={this.FlatListItemSeparator}

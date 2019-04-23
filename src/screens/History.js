@@ -37,7 +37,7 @@ class BeaconScan extends React.Component {
   		<Collapse>
 	      <CollapseHeader>
 	        <ListItem
-	        	containerStyle={{ borderBottomColor: 'black', borderWidth: 0.5, borderRadius: 3 }}
+	        	containerStyle={{ borderColor: 'black', borderWidth: 0.5, borderRadius: 3 }}
 			      roundAvatar
 			      title={data.item.eventType}
 	        />
@@ -67,7 +67,7 @@ class BeaconScan extends React.Component {
 
     return (
     	<View style={ styles.container } >
-    		<View style={{flexDirection:'row', marginTop:'3%'}} >
+    		<View style={{flex: 1, flexDirection:'row', marginTop:'3%'}} >
     			<FlatList
 				    data={this.state.events}
 				    ItemSeparatorComponent={this.FlatListItemSeparator}
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		flexDirection:'column',
-		justifyContent:'center',
+		justifyContent:'flex-start',
 		alignItems:'center',
 		backgroundColor: 'whitesmoke',
 	},
